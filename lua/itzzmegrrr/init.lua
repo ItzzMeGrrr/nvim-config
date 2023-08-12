@@ -12,6 +12,7 @@ vim.cmd([[
     autocmd!
     autocmd BufWritePost *.py :silent! !black %
     autocmd BufWritePost *.py :silent! !isort %
+    autocmd BufWritePost *.rs :silent! !rustfmt %
     autocmd BufWritePost *.js,*.ts,*.html,*.json,*.jsx,*.tsx,*.css,*.md,*.yaml :silent! !prettier --write %
   augroup END
 ]])
