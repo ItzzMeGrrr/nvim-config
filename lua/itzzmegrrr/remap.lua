@@ -15,3 +15,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 vim.api.nvim_set_keymap('i', '<C-S>', '<Esc>:w<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-S>', '<Esc>:w<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<C-e>', '<cmd>lua vim.diagnostic.open_float()<CR>',{ noremap = true }) 
+vim.api.nvim_set_keymap('i', '<C-e>', '<cmd>lua vim.diagnostic.open_float()<CR>',{ noremap = true }) 
+
